@@ -1,15 +1,15 @@
 <template>
     <div class="board">
-      
+    {{ board }}
     </div>
   </template>
   
-  <script>
-
-  export default {
-    
-  }
-  </script>
+<script>
+import { mapState } from 'vuex';
+export default {
+    computed: mapState(['board'])
+}
+</script>
   
   <style lang="css">
   .board {
