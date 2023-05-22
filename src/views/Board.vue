@@ -1,6 +1,10 @@
 <template>
     <div class="board">
-    {{ board }}
+    <div class="flex flex-row items-start">
+        <div class="column" v-for="column of board.columns">
+            {{ column }}
+        </div>
+    </div>
     </div>
   </template>
   
