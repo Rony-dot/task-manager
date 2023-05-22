@@ -2,6 +2,9 @@
     <div class="board" >
     <div class="flex flex-row items-start">
         <div class="column" v-for="column of board.columns">
+            <div class="flex items-center mb-2 font-bold">
+                {{ column.name }}
+            </div>
             {{ column }}
         </div>
     </div>
