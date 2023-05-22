@@ -1,5 +1,5 @@
-import {uuid} from './utils'
-
+/* eslint-disable */
+import { uuid } from "./utils"
 export default {
     name: 'workshop',
     columns: [{
