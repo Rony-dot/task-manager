@@ -1,5 +1,5 @@
 <template>
-    <div class="board">
+    <div class="board" >
     <div class="flex flex-row items-start">
         <div class="column" v-for="column of board.columns">
             {{ column }}
