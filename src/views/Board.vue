@@ -7,7 +7,10 @@
             </div>
            <div class="list-reset">
                 <div class="task" v-for="task of column.tasks">
-                    {{ task }}
+                    <span class="w-full flex-no-shrink font-bold">
+                        {{ task.name }}
+                    </span>
+
                 </div>
            </div>
         </div>
