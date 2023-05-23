@@ -28,11 +28,15 @@ export default {
 
 </script>
 <style lang="css">
-.btn{
-    @apply py-2 px-4 font-semibold rounded-lg shadow-md;
+.task{
+    @apply flex items-center flex-wrap shadow mb-2 py-2 px-2 rounded bg-white text-gray-950 no-underline;
+}
+.column{
+    @apply bg-gray-500 p-2 mr-4 text-left shadow rounded;
+    min-width: 350px;
 }
 .board {
-    @apply p-4  h-full overflow-auto;
+    @apply  p-4  h-full overflow-auto;
 }
 .task-bg {
   @apply  absolute;
