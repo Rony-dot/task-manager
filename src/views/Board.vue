@@ -5,7 +5,11 @@
             <div class="flex items-center mb-2 font-bold">
                 {{ column.name }}
             </div>
-            {{ column }}
+           <div class="list-reset">
+                <div class="task" v-for="task of column.tasks">
+                    {{ task }}
+                </div>
+           </div>
         </div>
     </div>
     </div>
