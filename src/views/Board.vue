@@ -2,7 +2,7 @@
     <div class="board" >
     <div class="">
         <div class="column" v-for="column of board.columns">
-            <div class="bg-blue-500 text-white p-4">
+            <div class="">
                 {{ column.name }}
             </div>
            <div class="list-reset">
@@ -28,14 +28,13 @@ export default {
 
 </script>
 <style lang="css">
-    .board {
-        
-    }
-    .column {
+.board {
+  @apply p-4 bg-teal-dark h-full overflow-auto;
+}
 
-    }
-    .task {
-        
-    }
+.task-bg {
+  @apply pin absolute;
+  background: rgba(0,0,0,0.5);
+}
 </style>
   
