@@ -10,7 +10,9 @@
                     <span class="w-full flex-no-shrink font-bold">
                         {{ task.name }}
                     </span>
-
+                    <p class="w-full flex-no-shrink mt-1 text-sm">
+                        {{ task.description }}
+                    </p>
                 </div>
            </div>
         </div>
