@@ -1,6 +1,5 @@
 <template>
     <div class="board" >
-        <button class="btn">click kochu</button>
     <div class="flex flex-row items-start">
         <div class="column" v-for="column of board.columns">
             <div class="flex items-center mb-2 font-bold">
@@ -33,7 +32,11 @@ export default {
     @apply py-2 px-4 font-semibold rounded-lg shadow-md;
 }
 .board {
-    @apply p-4 bg-teal-dark h-full overflow-auto;
+    @apply p-4  h-full overflow-auto;
+}
+.task-bg {
+  @apply  absolute;
+  background: rgba(0,0,0,0.5);
 }
 </style>
   
