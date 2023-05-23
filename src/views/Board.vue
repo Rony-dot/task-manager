@@ -1,16 +1,16 @@
 <template>
     <div class="board" >
-    <div class="flex flex-row items-start">
+    <div class="">
         <div class="column" v-for="column of board.columns">
-            <div class="flex items-center mb-2 font-bold">
+            <div class="">
                 {{ column.name }}
             </div>
            <div class="list-reset">
                 <div class="task" v-for="task of column.tasks">
-                    <span class="w-full flex-no-shrink font-bold">
+                    <span class="">
                         {{ task.name }}
                     </span>
-                    <p v-if="task.description" class="w-full flex-no-shrink mt-1 text-sm">
+                    <p v-if="task.description" class="">
                         {{ task.description }}
                     </p>
                 </div>
@@ -29,15 +29,13 @@ export default {
 </script>
 <style lang="css">
     .board {
-        @apply p-4 bg-teal-dark h-full overflow-auto;
+        
     }
     .column {
-        @apply bg-grey-light p-2 mr-4 text-left shadow rounded;
-        min-width: 350px;
+
     }
-    .task-bg {
-        @apply pin absolute;
-        background: rgba(0,0,0,0.5);
+    .task {
+        
     }
 </style>
   
