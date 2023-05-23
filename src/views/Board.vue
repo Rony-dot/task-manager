@@ -2,7 +2,7 @@
     <div class="board" >
     <div class="">
         <div class="column" v-for="column of board.columns">
-            <div class="">
+            <div class="bg-blue-500 text-white p-4">
                 {{ column.name }}
             </div>
            <div class="list-reset">
