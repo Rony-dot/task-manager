@@ -1,12 +1,12 @@
 <template>
     <div class="board" >
     <div class="flex flex-row items-start">
-        <div class="column" v-for="column of board.columns">
+        <div class="column" v-for="(column,$columnIndex) of board.columns" :key="$columnIndex">
             <div class="flex items-center mb-2 font-bold">
                 {{ column.name }}
             </div>
            <div class="list-reset">
-                <div class="task" v-for="task of column.tasks">
+                <div class="task" v-for="(task,$taskIndex) of column.tasks" :key="$taskIndex">
                     <span class="w-full flex-no-shrink font-bold">
                         {{ task.name }}
                     </span>
@@ -32,7 +32,7 @@ export default {
     @apply flex items-center flex-wrap shadow mb-2 py-2 px-2 rounded bg-white text-gray-950 no-underline;
 }
 .column{
-    @apply bg-gray-500 p-2 mr-4 text-left shadow rounded;
+    @apply bg-gray-300 p-2 mr-4 text-left shadow rounded;
     min-width: 350px;
 }
 .board {
