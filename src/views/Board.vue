@@ -36,7 +36,7 @@ export default {
     min-width: 350px;
 }
 .board {
-    @apply  p-4  h-full overflow-auto;
+    @apply bg-teal-800 p-4  h-full overflow-auto;
 }
 .task-bg {
   @apply  absolute;
